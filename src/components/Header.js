@@ -20,7 +20,7 @@ const Header = () => {
             </div>
             <div className="theme__holder">
               <div onClick={ changeTheme } className="box">
-                  { lightTheme ? <MdDarkMode size="1.6rem" /> : <HiOutlineSun size="1.6rem" />}
+                  { lightTheme ? <MdDarkMode size="2rem" /> : <HiOutlineSun size="2rem" />}
               </div>
             </div>
           </div>

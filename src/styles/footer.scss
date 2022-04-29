@@ -1,0 +1,58 @@
+@import "./colors.scss";
+
+footer{
+    padding: 4rem 0;
+    background: $dark-theme;
+    color: #FFF;
+    .footer__content{
+        display: flex;
+        justify-content: space-between;
+        .footer__left{
+            h1{
+                font-weight: bold;
+                padding-bottom: 1rem;
+                color: #6C63FF;
+                font-size: 3rem;
+            }
+            p{
+                font-size: .9rem;
+                opacity: .8;
+                line-height: 2.5;
+            }
+        }
+        .footer__right{
+            width: 50%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-gap: 20px;
+            .section{
+                h5{
+                    padding-bottom: 1rem;
+                }
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        color: #fff;
+                        line-height: 2.8;
+                        opacity: .8;
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Media Queries
+@media only screen and (max-width: 800px){
+    footer{
+        .footer__content{
+            flex-direction: column;
+            .footer__right{
+                padding-top: 2rem;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+  @import "./colors.scss";
+  
+  .herosection{
+    padding: 10rem 0;
+    // height: 100vh;
+    h1{
+        // font-family: "Cera Pro" !important;
+        font-size: 5.8rem;
+        color: $heading-color;
+        font-weight: bolder !important;
+    }
+    p{
+        font-weight: 400 !important;
+        line-height: 2;
+        font-size: 1.2rem;
+        padding-top: 1rem;
+        color: $text-color
+    }
+}
+
+
+
+.light__theme{
+    .herosection{
+        background: #FFF;
+    }
+}
+
+.dark__theme{
+    .herosection{
+        background: $dark-theme;
+        color: #FFF;
+        h1{
+            color: #FFF;
+        }
+        p{
+            color: #FFF;
+            opacity: .9;
+        }
+    }
+}
+
+//Media Queries 
+@media only screen and (max-width: 600px){
+    .herosection{
+        padding: 5rem 0 !important;
+        h1{
+            font-size: 2.7rem !important;
+            line-height: 1.3;
+        }
+        p{
+            font-size: 1rem;
+            padding-bottom: 2rem;
+        }
+        .img__holder{
+            padding-left: 3rem;
+            .hero__img{
+                max-width: 280px;
+                height: auto;
+            }
+        }
+    }
+}

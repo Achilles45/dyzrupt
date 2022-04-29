@@ -1,0 +1,125 @@
+@import "./colors.scss";
+
+.contact{
+    padding: 4rem 0;
+        .middle{
+            position: relative;
+            .text{
+                position: absolute;
+                right: -20%;
+                top: 19%;
+                // z-index: -10;
+                h1{
+                    font-size: 6rem;
+                    font-weight: bolder;
+                    color: rgba(0, 0, 0, 0.1)
+                };
+                .work{
+                    padding-left: 2rem;
+                }
+                .together{
+                    padding-left: 5rem;
+                }
+            }
+            .heading{
+                h1{
+                    font-weight: bolder !important;
+                    font-size: 3.5rem;
+                    color: $heading-color;
+                }
+                p{
+                    font-weight: 400 !important;
+                    line-height: 2;
+                    font-size: 1.1rem;
+                    color: $text-color
+                }
+            }
+        
+            //Form section
+            form{
+                padding-top: 2rem;
+                position: relative;
+                z-index: 100;
+                input{
+                    height: 4rem;
+                    border-radius: 10px;
+                    padding: 0 2rem;
+                    box-shadow: none !important;
+                    margin-bottom: 1rem;
+                    border: 1px solid #DEE6ED!important;
+                }
+                textarea{
+                    box-shadow: none !important;
+                    border: 1px solid #DEE6ED!important;
+                    border-radius: 10px;
+                    padding: 1rem 2rem;
+                }
+                .button__holder{
+                    text-align: center;
+                    padding-top: 2.2rem;
+                    .button{
+                        background: #6C63FF;
+                        border: none;
+                        padding: 1rem;
+                        text-align: center;
+                        color: #FFF;
+                        border-radius: 6px;
+                        width: 50%;
+                        margin: 0 auto !important
+                    }
+                }
+            }
+        }
+}
+    .light__theme{
+        .contact{
+            background: #F2F5F8;
+        }
+    }
+    
+    .dark__theme{
+        .contact{
+            background: #180828;
+            color: #FFF;
+            .text{
+                h1{
+                    color: #213345;
+                }
+            }
+                .heading{
+                    h1{
+                        color: #FFF;
+                    }
+                    p{
+                        color: #FFF;
+                        opacity: .9;
+                    }
+                }
+        
+                form{
+                    input, textarea {
+                        background: #0E0715;
+                        border: .1px solid #324D68 !important;
+                        color: #FFF;
+                    }
+                    input::placeholder{
+                        color: #FFF;
+                        opacity: .8;
+                    }
+                    textarea::placeholder{
+                        color: #fff;
+                        opacity: .8;
+                    }
+                    .button{
+                        color: #0E0715;
+                    }
+                }
+            }
+    }
+
+    //Media Queries
+@media only screen and (max-width: 600px){
+    .button{
+        width: 80% !important;
+    }
+}

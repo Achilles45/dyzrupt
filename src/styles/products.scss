@@ -1,0 +1,118 @@
+@import "./colors.scss";
+
+.products{
+    padding: 4rem 0;
+    .heading{
+        h1{
+            font-weight: bolder !important;
+            font-size: 3.5rem;
+            color: $heading-color
+        }
+        p{
+            font-weight: 400 !important;
+            line-height: 2;
+            font-size: 1.1rem;
+            padding-top: 1rem;
+            color: $text-color
+        }
+    }
+    .product__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 30px;
+        padding-top: 2.5rem;
+        .product__item{
+            position: relative;
+            text-align: center;
+            border-radius: 6px;
+            border: 1px solid #f2f2f2;
+            padding: 2.5rem 2rem;
+            h4{
+                padding-top: 1rem;
+                padding-bottom: .5rem;
+                color: $heading-color;
+            }
+            p{
+                color: $text-color;
+                line-height: 1.7;
+                padding-bottom: 1rem;
+            }
+            a{
+                text-decoration: none;
+                color: #6C63FF;
+            }
+            .label{
+                position: absolute;
+                bottom: 0;
+                right: 5%;
+                h1{
+                    font-size: 3.5rem;
+                    color: $text-color;
+                    font-weight: bolder;
+                    opacity: .3;
+                }
+            }
+            .coin{
+                max-width: 50px;
+                height: auto;
+            }
+        }
+    }
+
+    .vision{
+        padding: 4rem 0;
+            @extend .heading ;
+    }
+}
+
+
+.light__theme{
+    .products{
+        background: #FFF;
+    }
+}
+
+.dark__theme{
+    .products{
+        background: $dark-theme;
+        color: #FFF;
+        .heading{
+            h1{
+                color: #FFF;
+            }
+            p{
+                color: #FFF;
+                opacity: .9;
+            }
+        }
+        .product__item{
+            border: .1px solid #6C63FF;
+            h4, p {
+                color: #FFF;
+            }
+            .label h1{
+                color: #213345;
+                opacity: .5;
+            }
+        }
+    }
+}
+
+//Media Queries
+@media only screen and (max-width: 600px){
+    .heading{
+        h1{
+            font-size: 2.7rem !important;
+        }
+        p{
+            font-size: .95rem !important;
+            line-height: 2.3 !important;
+        }
+    }
+    .product__grid{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    }
+    .vision{
+        padding: 4rem 1rem !important;
+    }
+}

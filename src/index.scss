@@ -1,0 +1,16 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url("./CeraFont/Cera\ Pro\ Medium.otf");
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cera Pro" !important;
+  overflow-x: hidden !important;
+}
+

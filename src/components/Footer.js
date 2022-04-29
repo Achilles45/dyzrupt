@@ -6,8 +6,10 @@ const Footer = () => {
         <div className="container">
             <div className="footer__content">
                 <div className="footer__left">
+                    <div className="intro">
                     <h1>Dyzrupt</h1>
                     <p>Unit 112 Orion Mall,<br />Palm Street,<br />Victoria Mahe,<br />Seychelles.</p>
+                    </div>
                     <div className="contact__details">
                         <p>contact@dyzrupt.ltd <br />2022 Dyzrupt LTD</p>
                     </div>

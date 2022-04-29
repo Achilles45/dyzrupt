@@ -8,6 +8,8 @@ footer{
         display: flex;
         justify-content: space-between;
         .footer__left{
+            display: flex;
+            flex-direction: column;
             h1{
                 font-weight: bold;
                 padding-bottom: 1rem;
@@ -49,6 +51,14 @@ footer{
     footer{
         .footer__content{
             flex-direction: column;
+            .footer__left{
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                .contact__details{
+                    padding-top: .5rem;
+                }
+            }
             .footer__right{
                 padding-top: 2rem;
                 width: 100%;

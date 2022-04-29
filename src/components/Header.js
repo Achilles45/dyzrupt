@@ -6,10 +6,6 @@ import { HiOutlineSun } from "react-icons/hi"
 
 const Header = () => {
   const { lightTheme, changeTheme } = useContext(ThemeContext)
-
-  // const changeTheme = () => {
-  //   setTheme(!lightTheme)
-  // }
   return (
     <div className={ lightTheme ? "light__theme" : "dark__theme" }>
       <div className="header">

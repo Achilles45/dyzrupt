@@ -1,13 +1,18 @@
   @import "./colors.scss";
+
+//   @font-face {
+//     font-family: "Cera Pro";
+//     src: url("../CeraFont/Cera Pro Black.otf");
+//   }
   
   .herosection{
     padding: 10rem 0;
     // height: 100vh;
     h1{
-        // font-family: "Cera Pro" !important;
+        font-family: "Cera Pro" !important;
         font-size: 5.8rem;
         color: $heading-color;
-        font-weight: bolder !important;
+        font-weight: 900 !important;
         line-height: 1;
     }
     p{

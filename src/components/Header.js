@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 import "../styles/header.scss";
-import { MdDarkMode, MdOutlineDarkMode } from "react-icons/md"
+import { MdDarkMode } from "react-icons/md"
+import { HiOutlineSun } from "react-icons/hi"
 
 const Header = () => {
   const { lightTheme, changeTheme } = useContext(ThemeContext)
@@ -19,7 +20,7 @@ const Header = () => {
             </div>
             <div className="theme__holder">
               <div onClick={ changeTheme } className="box">
-                  { lightTheme ? <MdDarkMode size="2rem" /> : <MdOutlineDarkMode size="2rem" />}
+                  { lightTheme ? <MdDarkMode size="1.6rem" /> : <HiOutlineSun size="1.6rem" />}
               </div>
             </div>
           </div>
